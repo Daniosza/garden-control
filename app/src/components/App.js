@@ -9,10 +9,9 @@ class App extends Component {
         <div className="header">
           <h2>Bem vindo ao Controle do seu Jardim</h2>
         </div>
-        <p className="text">
-          Lorem ipsum, lorem ipsum, lorepm pisuiejks.
-        </p>
-        <Form />
+        <div className="main">
+          <Form />
+        </div>
         <div className="footer" />
       </div>
     );
