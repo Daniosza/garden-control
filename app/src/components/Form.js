@@ -1,4 +1,13 @@
 import React, { Component } from 'react';
+import data from './List.json';
+import "react-datepicker/dist/react-datepicker.css";
+import Calendar from "../components/Calendar"
+
+console.log(data)
+
+const dataList = data.map((item, index) => {
+  return <option value={item.id}>{item.name}</option>
+});
 
 class Form extends Component {
   render() {
@@ -9,15 +18,10 @@ class Form extends Component {
             <div className="container">
             <label>Planta:</label>
             <select>
-              <option value="default" selected="selected">Selecione...</option>
-              <option value="cenoura">Cenoura</option>
-              <option value="berinjela">Berinjela</option>
-              <option value="salsa">Salsa</option>
-              <option value="rabanete">Rabanete</option>
-              <option value="rucula">Rúcula</option>
+              {dataList}  
             </select>
             <label>Data:</label>
-            <input type="text" name="data" placeholder="Data" />
+            <Calendar />
             <input type="submit" value="Cadastrar" />
             </div>
         </form>

@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "name": "Cenoura" 
+    }, 
+    { 
+        "id" : 2,
+        "name": "Berinjela" 
+    },
+    { 
+        "id" : 3,
+        "name": "Salsa" 
+    },
+    { 
+        "id" : 4,
+        "name": "Rabanete" 
+    },
+    { 
+        "id" : 5,
+        "name": "Rucula" 
+    }
+]
