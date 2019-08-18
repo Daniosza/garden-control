@@ -3,8 +3,6 @@ import data from './List.json';
 import "react-datepicker/dist/react-datepicker.css";
 import Calendar from "../components/Calendar"
 
-console.log(data)
-
 const dataList = data.map((item, index) => {
   return <option value={item.id}>{item.name}</option>
 });
